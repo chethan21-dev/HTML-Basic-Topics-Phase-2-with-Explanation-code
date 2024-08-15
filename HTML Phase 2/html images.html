@@ -1,0 +1,98 @@
+<!--Here html defines in terms of images trough pictures, symbols, emojies etc.,-->
+Images are designed in webpages like showing content, picture slides etc.,
+Image Syntax is :
+<img src="url" alt="alternatetext">  
+The <img> tag has two required attributes:
+1. src - Specifies the path to the image
+2. alt - Specifies an alternate text for the image
+<!--src attribute is like source of image. eaither it was local file, or else in website link image through URL path-->
+In image side there are some image types :
+1. jpg
+2. jpeg
+3. webp 
+4. png etc.,
+<html>
+    <head>
+        <style>  <!--in Head section also using the style attribute. It prevents styles sheets from changing the size of images.-->
+            img {
+              width: 100%;
+              height: 100%;
+            }
+    </head>
+
+    <body>
+<h2>Alternative text</h2>
+<img src="House.jpeg" alt="House image"> 
+<img src="House.jpg" alt="House image">
+<img src="House.webp" alt="House image">
+<img src="House.png" alt="House image">
+
+<!--Now in images you can set the width, Height inside "img src" tag based on your planning-->
+<img src="House.jpg" alt="House image" width="460" height="345">
+or else 
+<!--you can define width, height with help of "style" attribute inside "img src" tag-->
+<img src="House.jpg" alt="House image" style="width:500px;height:600px;">
+
+<!--If you have your images in a sub-folder, you must include the folder name in the src attribute:-->
+<img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"> 
+
+you can use gifs in image section :
+<img src="House.gif" alt="House gif" style="width:48px;height:48px;"> 
+
+<!--image float-->
+image floating is know as presents in left and right directions.
+
+<img src="House.gif" alt="House gif" style="float:right;width:42px;height:42px;">
+
+<img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+
+</body>
+</html>
+
+<!--background image-->
+To add a background image on an HTML element, use the HTML style attribute and the CSS background-image property:
+
+Demo :
+<html>
+<body>
+<h2>Background Image</h2>
+<p style="background-image: url('House.jpg');">
+This text will present inside of the image.
+</p>
+
+You can also specify the background image in the <style> element, in the <head> section
+<style>
+p {
+  background-image: url('House.jpg');
+}
+</style> 
+</body>
+</html>
+
+<!--Background Repeat-->
+In Background image also sometimes image should be comes multiple times it called "repeat" attribute.
+
+<html>
+<head>
+<style>
+body {
+  background-image: url('House.jpg');
+}
+</style>
+</head>
+<body>
+
+<h2>Background Repeat</h2>
+
+Suppose If wont that repeat image at multiple times means : 
+<style>
+    body {
+      background-image: url('example_img_girl.jpg');
+      background-repeat: no-repeat; <!--for avoid repeat image value-->
+    }
+    </style> 
+
+</body>
+</html>
+
+

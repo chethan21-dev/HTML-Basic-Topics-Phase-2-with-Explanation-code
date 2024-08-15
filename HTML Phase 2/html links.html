@@ -1,0 +1,160 @@
+<!--HTML links are usually use in css styles also.
+HTML links are hyperlinks. You can click on a link and jump to another document.
+When you move the mouse over a link, the mouse arrow will turn into a little hand.-->
+
+HTML link Syntax :
+<a href="url">link text</a>
+<!--Here a refers achor and href means hypertext reference-->
+Demo :
+<html>
+<body>
+
+<h1>HTML Links</h1>
+
+<p><a href="https://www.w3schools.com/">Visit W3Schools.com!</a></p>
+
+</body>
+</html>
+
+In link category also defined in target type like :
+1._self - Default. Opens the document in the same window/tab as it was clicked
+2._blank - Opens the document in a new window or tab
+3._parent - Opens the document in the parent frame
+4._top - Opens the document in the full body of the window
+
+Demo :
+
+<html>
+<body>
+
+<h2>The target Attribute</h2>
+
+<a href="https://www.google.com/" target="_blank">Visit W3Schools!</a> 
+<a href ="https://www.google.com/"target="_self" >>HTML Tutorial</a>
+<a href="https://www.google.com/" target="_parent">Visit W3Schools!</a> 
+<a href="https://www.google.com/" target="_top">Visit W3Schools!</a> 
+
+<p>If target="_any target will do specific action.The link will open in a new browser window or tab.</p>
+
+</body>
+</html>
+
+After this target concepy. Now, Links are defines 2 types 1. Absloute URL 2. Relative url
+<!--Absloute URL : It points to another web site (like href="http://www.example.com/theme.store")-->
+Demo :
+<html>
+<body>
+<h2>Absolute URLs</h2>
+<p><a href="https://www.google.com/">Google</a></p>
+</body>
+</html>
+
+<!--Relative URL : It points to a file within a web site (like href="/themes/theme.store")-->
+Demo :
+<html>
+<body>
+<h2>Relative URLs</h2>
+<p><a href="html_music.asp">HTML Music</a></p>
+</body>
+</html>
+
+<!--HTML image Link by one click-->
+For this one. use an image as a link, just put the <img> tag inside the <a> tag:
+Demo :
+<html>
+<body>
+<h2>Image as a Link</h2>
+<p>The image below is a link. click at once. and it will goess to which website u r going to given in href</p>
+<a href="default.asp"><img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"></a> <!--Here we can put any type of image, symbols, or emojis etc., in href/img src-->
+</body>
+</html>
+
+<!--If u want to send any mail to another person by clicking the link means.-->
+use mail link 
+<html>
+<body>
+<h2>Link to an Email</h2>
+<p>To create a link that opens in the user's email program (to let them send a new email), use mailto: inside the href attribute:</p>
+<p><a href="mailto:xyz@mail.com">Send email</a></p>
+</body>
+</html>
+
+<!--Links by using colours -->
+Now using Link. We just insert different colours to our website page 
+Here also you can give various styles : 
+1. Text decoration
+2. Text colours
+3. background-color
+4. Font size etc.,
+(ie., When you go to that link. when mousing over a link (a:hover) it will become red and underlined:). Using CSS.
+And also here 3 types of links :
+1. Visted link
+2. Unvisited link
+3. Active link
+
+Demo of above mentioned types:
+
+<html>
+<head>
+<style>
+a:link {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {  /*hover used to select elements when you mouse over them */
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: orange;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<h2>Link Colors</h2>
+<p>You can change the default colors of links</p>
+<a href="https://www.google.com/" target="_blank">HTML Images</a> 
+</body>
+</html>
+
+<!--Links Bookmarks-->
+HTML links can be used to create bookmarks, so that readers can jump to specific parts of a web page.
+Bookmarks--can create a shortcut to visit a website. By saving into bookmark lists.
+By using bookmark list link. Insert the "<id>" attribute.
+syntax is :
+1. id attribute (id="value") to define bookmarks in a page
+2. href attribute (href="#value") to link to the bookmark.
+<!--id = "value" && href="value"-->
+<html>
+<body>
+<p><a href="#p1">Go to page 1</a></p>
+<p><a href="#p3">Go to page 3</a></p>
+
+<a href="book.html#p3">Go to page 3</a> <!--You can also add a link to a bookmark on another page--> 
+
+<h2>Page 1</h2>
+<p>Introduction </p>
+<h2>Page 2</h2>
+<p>Index</p>
+<h2>Page 3</h2>
+<p>Concept</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
